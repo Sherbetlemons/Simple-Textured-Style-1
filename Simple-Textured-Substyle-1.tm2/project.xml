@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#eeeeee">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-image="img\textures\concrete-2.jpg">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
@@ -11,9 +11,21 @@
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[Mapbox Light]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
+
+<Layer name="landcover"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="hillshade"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="contour"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
 
 <Style name="landuse" filter-mode="first">
   <Rule>

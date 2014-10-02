@@ -26,11 +26,13 @@ maintain or invert existing value (light to dark) scale.
 @text4: #666;
 
 //Texture palette
+@landtex: url('img\textures\concrete-2.jpg');
+
 @tex1: url('img\textures\sandstone-1.jpg');
 @tex2: url('img\textures\sandstone-2.jpg');
 @tex3: url('img\textures\concrete-1.jpg');
 
-Map { background-color: @land; }
+Map { background-image: @landtex; }
 
 // Political boundaries //
 #admin[admin_level=2][maritime=0] {
