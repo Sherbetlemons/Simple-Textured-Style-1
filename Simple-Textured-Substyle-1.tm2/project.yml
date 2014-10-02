@@ -23,6 +23,5 @@ name: Mapbox Light
 source: "mapbox:///mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
-  - labels.mss
   - roads.mss
 template: ''

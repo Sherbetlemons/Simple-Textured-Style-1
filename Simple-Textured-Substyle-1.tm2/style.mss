@@ -25,6 +25,11 @@ maintain or invert existing value (light to dark) scale.
 @text3: #777;
 @text4: #666;
 
+//Texture palette
+@tex1: url('img\textures\sandstone-1.jpg');
+@tex2: url('img\textures\sandstone-2.jpg');
+@tex3: url('img\textures\concrete-1.jpg');
+
 Map { background-color: @land; }
 
 // Political boundaries //
@@ -54,7 +59,7 @@ Map { background-color: @land; }
 #landuse[class='wood'],
 #landuse_overlay {
   polygon-fill: darken(@land,3);
-  [zoom>=15] { polygon-fill:mix(@land,@fill4,95); }
+  [zoom>=15] { polygon-pattern-file: @tex3; }
 }
 
 #landuse[class='pitch'],
@@ -68,9 +73,9 @@ Map { background-color: @land; }
   polygon-fill: mix(@land,@fill1,95);
 }
 
-#building { 
-  polygon-fill: mix(@fill2,@land,25);
-  [zoom>=16]{ polygon-fill: mix(@fill2,@land,50);}
+#building {
+  polygon-pattern-file: @tex1;
+  [zoom>=16]{ polygon-pattern-file: @tex2;}
 }
 
 #aeroway {
