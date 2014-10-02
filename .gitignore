@@ -15,7 +15,7 @@ $RECYCLE.BIN/
 *.msp
 
 # Images
-$Simple-Textured-Substyle-1.tm2\img/
+$Simple-Textured-Substyle-1.tm2/img/*
 
 # =========================
 # Operating System Files
