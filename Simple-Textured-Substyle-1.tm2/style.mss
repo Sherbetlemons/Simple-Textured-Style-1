@@ -28,7 +28,7 @@ maintain or invert existing value (light to dark) scale.
 //Texture palette
 @landtex: url('img\textures\paper-vin-2.jpg');
 
-@tex1: url('img\textures\sandstone-1.jpg');
+@tex1: url('img\textures\squairy_light_2X.png');
 @tex2: url('img\textures\sandstone-2.jpg');
 @tex3: url('img\textures\paper-vin-green-2.jpg');
 @tex4: url('img\textures\paper-vin-green-1.jpg');
