@@ -26,13 +26,17 @@ maintain or invert existing value (light to dark) scale.
 @text4: #666;
 
 //Texture palette
-@landtex: url('img\textures\concrete-2.jpg');
+@landtex: url('img\textures\paper-vin-2.jpg');
 
 @tex1: url('img\textures\sandstone-1.jpg');
 @tex2: url('img\textures\sandstone-2.jpg');
-@tex3: url('img\textures\concrete-1.jpg');
+@tex3: url('img\textures\paper-vin-green-2.jpg');
+@tex4: url('img\textures\paper-vin-green-1.jpg');
+@tex5: url('img\textures\paper-vin-blue-1.jpg');
+@tex6: url('img\textures\paper-vin-red-1.jpg');
+@tex7: url('img\textures\paper-vin-yellow-1.jpg');
 
-Map { background-image: @landtex; }
+Map { background-color: @land; }
 
 // Political boundaries //
 #admin[admin_level=2][maritime=0] {
@@ -60,24 +64,43 @@ Map { background-image: @landtex; }
 #landuse[class='park'],
 #landuse[class='wood'],
 #landuse_overlay {
-  polygon-fill: darken(@land,3);
-  [zoom>=15] { polygon-pattern-file: @tex3; }
+  polygon-opacity: 170;
+  polygon-fill: #939393;
+  [zoom>=16]{ polygon-opacity: 150;
+              polygon-fill: #939393;}
 }
 
 #landuse[class='pitch'],
 #landuse[class='sand'] { 
-  polygon-fill: mix(@land,@fill4,90);
+  polygon-opacity: 170;
+  polygon-fill: #838383;
+  [zoom>=16]{ polygon-opacity: 150;
+              polygon-fill: #838383;}
 }
 
-#landuse[class='hospital'],
-#landuse[class='industrial'],
+#landuse[class='hospital'], {
+  polygon-opacity: 170;
+  polygon-fill: #003dff;
+  [zoom>=16]{ polygon-opacity: 150;
+              polygon-fill: #003dff;}
+}
+  
+#landuse[class='industrial'], {
+  polygon-opacity: 170;
+  polygon-fill: #fff800;
+  [zoom>=16]{ polygon-opacity: 150;
+              polygon-fill: #fff800;}
+}
+  
 #landuse[class='school'] { 
-  polygon-fill: mix(@land,@fill1,95);
+
 }
 
 #building {
-  polygon-pattern-file: @tex1;
-  [zoom>=16]{ polygon-pattern-file: @tex2;}
+  polygon-opacity: 170;
+  polygon-fill: #000;
+  [zoom>=16]{ polygon-opacity: 150;
+              polygon-fill: #000;}
 }
 
 #aeroway {

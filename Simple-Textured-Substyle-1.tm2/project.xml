@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-image="img\textures\concrete-2.jpg">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#eeeeee">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
@@ -29,57 +29,74 @@
 
 <Style name="landuse" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#e6e6e6" />
-    <PolygonPatternSymbolizer file="img\textures\concrete-1.jpg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#e6e6e6" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill="#e6e6e6" />
-    <PolygonPatternSymbolizer file="img\textures\concrete-1.jpg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
-    <PolygonSymbolizer fill="#e6e6e6" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
-    <PolygonSymbolizer fill="#e6e6e6" />
-    <PolygonPatternSymbolizer file="img\textures\concrete-1.jpg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
-    <PolygonSymbolizer fill="#e6e6e6" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'school')</Filter>
-    <PolygonSymbolizer fill="#efefef" />
-  </Rule>
-  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([class] = 'industrial')</Filter>
-    <PolygonSymbolizer fill="#efefef" />
+    <PolygonSymbolizer fill-opacity="150" fill="#fff800" />
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'industrial')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#fff800" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([class] = 'hospital')</Filter>
-    <PolygonSymbolizer fill="#efefef" />
+    <PolygonSymbolizer fill-opacity="150" fill="#003dff" />
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'hospital')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#003dff" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#d6d6d6" />
+    <PolygonSymbolizer fill-opacity="150" fill="#838383" />
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#838383" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#d6d6d6" />
+    <PolygonSymbolizer fill-opacity="150" fill="#838383" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#838383" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill-opacity="150" fill="#939393" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#939393" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <PolygonSymbolizer fill-opacity="150" fill="#939393" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#939393" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'cemetery')</Filter>
+    <PolygonSymbolizer fill-opacity="150" fill="#939393" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'cemetery')</Filter>
+    <PolygonSymbolizer fill-opacity="170" fill="#939393" />
   </Rule>
 </Style>
 <Layer name="landuse"
@@ -111,46 +128,46 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#d1d1d1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#d1d1d1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="1" stroke="#d1d1d1" />
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke="#d1d1d1" stroke-width="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#d1d1d1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#d1d1d1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="1" stroke="#d1d1d1" />
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke="#d1d1d1" stroke-width="0.5" />
   </Rule>
 </Style>
@@ -222,11 +239,11 @@
 <Style name="building" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <PolygonPatternSymbolizer file="img\textures\sandstone-2.jpg" />
+    <PolygonSymbolizer fill-opacity="150" fill="#000000" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <PolygonPatternSymbolizer file="img\textures\sandstone-1.jpg" />
+    <PolygonSymbolizer fill-opacity="170" fill="#000000" />
   </Rule>
 </Style>
 <Layer name="building"
@@ -235,13 +252,12 @@
 
 <Style name="landuse_overlay" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#e6e6e6" />
-    <PolygonPatternSymbolizer file="img\textures\concrete-1.jpg" />
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <PolygonSymbolizer fill-opacity="150" fill="#939393" />
   </Rule>
   <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <PolygonSymbolizer fill="#e6e6e6" />
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <PolygonSymbolizer fill-opacity="170" fill="#939393" />
   </Rule>
 </Style>
 <Layer name="landuse_overlay"
